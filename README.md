@@ -4,7 +4,7 @@
 
 ---
 
-## 📊 Соответствие критериям оценки
+## Соответствие критериям оценки
 
 Проект реализован согласно критериям задания
 
@@ -96,8 +96,10 @@ mvnw.cmd spring-boot:run
 Откройте в браузере: http://localhost:8080/swagger-ui/index.html
 Здесь можно нажать `Try it out` → `Execute` для любого эндпоинта и увидеть ответ прямо в браузере.
 `OpenAPI-спека` доступна по адресу: http://localhost:8080/v3/api-docs.
+<img width="1858" height="966" alt="Screenshot 2026-11-04 185958" src="https://github.com/user-attachments/assets/99f1dd49-7450-4693-adff-aa9079743beb" />
 
-## 🗄️ H2 Console (Проверка БД)
+
+## H2 Console (Проверка БД)
 
 Откройте в браузере: http://localhost:8080/h2-console
 
