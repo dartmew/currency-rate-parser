@@ -4,6 +4,19 @@
 
 ---
 
+## 📊 Соответствие критериям оценки (40 баллов)
+
+Проект реализован согласно критериям задания
+
+| Критерий | Реализация в проекте |
+|---|---|
+| **1. Spring Boot + Unit-тесты** | Написано **7 тестов**: 5 slice-тестов контроллера (`MockMvc`) и 2 чистых Unit-теста сервиса. Запуск: `./mvnw clean test`. |
+| **2. Простые потоки (Thread, Runnable)** | Эндпоинт `GET /api/fetch/thread`. Создает `new Thread(task)` и выполняет парсинг. |
+| **3. ExecutorService + блокирующие структуры + файл + демон-потоки** | Класс `LoggingService`. Использует `LinkedBlockingQueue`, демон-поток `Daemon-File-Logger` и пишет логи в файл `parser_history.log`. |
+| **4. ExecutorService + синхронизация + H2 + Parallel Stream** | `@Scheduled` в `SchedulingConfig`. `synchronized` в `CurrencyParsingService`. H2 + JPA. `parallelStream` в `/api/analytics`. |
+
+---
+
 ## Инструкция по запуску
 
 **Требования:** `JDK 17+` (проект протестирован на `JDK 21` и `Spring Boot 4.1.2`). `Maven` не требуется — используется wrapper `mvnw`.
